@@ -60,11 +60,11 @@
       <div class="col-md-4">
         {% for item in blogs.all %}
         <div class="card-body">
-          <p class="card-text"> {{item.title}} </p>
+          <a href='' class="card-text"> {{item.title}} </a>
           <div class="card-body">
-            <p class="card-text"> {{item.pub_date}} </p>
+            <p class="card-text"> {{item.pub_date_simple}} </p>
           <div class="card-body">
-            <p class="card-text"> {{item.my_status}} </p>
+            <p class="card-text"> {{item.summary}} </p>
             <div class="card mb-4 box-shadow">
               <img class="card-img-top" src= {{item.image.url}}/>
           </div>
